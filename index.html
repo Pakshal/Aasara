@@ -1,190 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aasara - Hope for All Beings | Connecting Jainism Digitally</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9faf8;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: #ffffff;
-    }
-    header img {
-      max-width: 260px;
-    }
-    .tagline{
-      color:#4e6b3a;
-      font-weight:bold;
-      margin-top:10px;
-    }
-    nav {
-      background: #4e6b3a;
-      color: white;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top:0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
-      text-align: center;
-    }
-    .hero h1 {
-      color: #4e6b3a;
-    }
-    .card {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      margin-bottom: 35px;
-    }
-    .initiative-img{
-      width:100%;
-      border-radius:10px;
-      margin-bottom:15px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #4e6b3a;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aasara - Hope for All Beings | Connecting Jainism Digitally</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f6f8f3;
+  color:#333;
+}
+
+header{
+  background:white;
+  padding:20px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo img{
+  height:70px;
+}
+
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  padding:60px 40px;
+  background:linear-gradient(to bottom,#ffffff,#eef3e8);
+}
+
+.hero-text{
+  max-width:520px;
+}
+
+.hero-text h1{
+  font-size:36px;
+  color:#2f4f2f;
+}
+
+.hero-text p{
+  margin-top:15px;
+  font-size:18px;
+}
+
+.hero-buttons a{
+  display:inline-block;
+  padding:12px 22px;
+  margin-right:10px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-primary{
+  background:#e47d1b;
+  color:white;
+}
+
+.btn-secondary{
+  border:2px solid #4e6b3a;
+  color:#4e6b3a;
+}
+
+.hero img{
+  max-width:420px;
+  border-radius:12px;
+}
+
+.section{
+  padding:60px 40px;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#2f4f2f;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:20px;
+}
+
+.card-content h3{
+  margin-top:0;
+  color:#2f4f2f;
+}
+
+.volunteer{
+  background:#e9f0e3;
+  padding:40px;
+  text-align:center;
+  border-radius:12px;
+}
+
+footer{
+  background:#222;
+  color:white;
+  padding:30px;
+  text-align:center;
+}
+
+@media(max-width:768px){
+.hero{
+  text-align:center;
+}
+.hero img{
+  margin-top:30px;
+}
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" alt="AASara Logo">
-  <div class="tagline">Aasara - Hope for All Beings | Connecting Jainism Digitally</div>
+  <div class="logo">
+    <img src="logo.png" />
+    <div>
+      <strong>Aasara</strong><br/>
+      Hope for All Beings
+    </div>
+  </div>
 </header>
 
-<nav>
-  <a href="#vision">Vision</a>
-  <a href="#initiatives">Initiatives</a>
-  <a href="#volunteer">Volunteer</a>
-  <a href="#contact">Contact</a>
-</nav>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Aasara - Hope for All Beings | Connecting Jainism Digitally</h1>
+    <p>
+      Compassion in action. Technology with purpose. We build digital
+      initiatives that make Jain values accessible to everyone.
+    </p>
 
-<section class="hero" id="vision">
-  <h1>Digitally Connecting Jainism</h1>
-  <p>
-    AASara is a community-driven initiative with a vision to digitally provide services
-    for the Jain community. Our mission is to connect Jain values, compassion, and
-    seva with modern technology. Through digital platforms, awareness initiatives,
-    and community collaboration, we aim to bring Jainism closer to people’s daily lives.
-  </p>
+    <div class="hero-buttons">
+      <a href="#initiatives" class="btn-primary">Our Initiatives</a>
+      <a href="#volunteer" class="btn-secondary">Get Involved</a>
+    </div>
+  </div>
+
+  <img src="images/hero.jpg" alt="Aasara">
 </section>
 
-<section id="initiatives">
+<section id="initiatives" class="section">
   <h2>Our Initiatives</h2>
 
-  <div class="card">
-    <img src="images/feeding-cows.jpg" class="initiative-img" alt="Feeding Cows">
-    <h3>1. Feeding Stray Cows</h3>
-    <p>
-      This initiative focuses on collecting rotis from devotees and feeding stray cows
-      on the streets. We place stalls in temples where people can donate rotis, which
-      are later distributed to cows in need.
-    </p>
-    <p>
-      Many cows are abandoned once they stop giving milk, and male cows are often left
-      on roads without care. This initiative promotes compassion and ensures that these
-      animals receive food and dignity. It also encourages community participation in
-      Jeevdaya and ahimsa.
-    </p>
-  </div>
+  <div class="cards">
 
-  <div class="card">
-    <img src="images/jain-app.jpg" class="initiative-img" alt="Jain Companion App">
-    <h3>2. Jain Companion App</h3>
-    <p>
-      We are building a Jain Companion chatbot where users can ask questions related
-      to Jainism on a daily basis.
-    </p>
-    <ul>
-      <li>Navkarshi time</li>
-      <li>Pachkan guidance</li>
-      <li>Jain train food assistance using train number</li>
-      <li>Scan food products to check Jain compatibility</li>
-      <li>Bhojanshala in Bangalore</li>
-      <li>Temples in Bangalore</li>
-      <li>Many more features coming soon...</li>
-    </ul>
-    <p>
-      This initiative aims to digitally empower the Jain community and bring essential
-      Jain resources into one accessible platform.
-    </p>
-  </div>
+    <div class="card">
+      <img src="images/feeding-cows.jpg">
+      <div class="card-content">
+        <h3>Feeding Stray Cows</h3>
+        <p>
+          Parasparopagraho Jivanam. We collect rotis from devotees and feed
+          abandoned cows, promoting compassion and Jeevdaya.
+        </p>
+      </div>
+    </div>
 
-  <div class="card">
-    <img src="images/shatrunjay.jpg" class="initiative-img" alt="Shatrunjay Initiative">
-    <h3>3. Pledge for Shatrunjay</h3>
-    <p>
-      A digital awareness initiative to preserve the sanctity of Shatrunjay Giriraj.
-      The pledge encourages devotees to maintain cleanliness, avoid plastic waste,
-      and respect the sacred nature of the pilgrimage.
-    </p>
-    <a class="btn" href="http://pledgeforshatrunjay.in" target="_blank">Visit Initiative</a>
-  </div>
+    <div class="card">
+      <img src="images/jain-companion.jpg">
+      <div class="card-content">
+        <h3>Jain Companion App</h3>
+        <p>
+          Digital Jain assistant with Navkarshi time, Pachkan guidance,
+          Jain food scanner, train food support and more.
+        </p>
+      </div>
+    </div>
 
-  <div class="card">
-    <h3>More Digital Initiatives</h3>
-    <p>
-      We are continuously working on new digital initiatives for the Jain community.
-      Stay connected and be part of this journey.
-    </p>
+    <div class="card">
+      <img src="images/ini3.jpg">
+      <div class="card-content">
+        <h3>Pledge for Shatrunjay</h3>
+        <p>
+          Preserve the sanctity of Giriraj. Promote clean pilgrimage
+          and make it plastic free.
+        </p>
+        <a class="btn-primary" href="http://pledgeforshatrunjay.in" target="_blank">
+          Take the Pledge
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section id="volunteer">
-  <h2>Volunteer With Us</h2>
-  <p>
-    Want to contribute to digital Jain initiatives? We welcome volunteers from all
-    backgrounds including technology, content, design, and community outreach.
-  </p>
-  <p>
-    Fill the volunteer form and we will get in touch with you.
-  </p>
-  <a class="btn" href="#">Volunteer Form (Coming Soon)</a>
+<section id="volunteer" class="section">
+  <div class="volunteer">
+    <h2>Be the Change. Volunteer with Aasara.</h2>
+    <p>
+      Your time, skills, and kindness can create a lasting difference.
+    </p>
+    <a class="btn-primary" href="#">I Want to Volunteer (Google Form)</a>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: pakshal94@gmail.com</p>
+<section class="section">
+  <h2>Contact</h2>
+  <p style="text-align:center;">pakshal94@gmail.com</p>
 </section>
 
 <footer>
-  <p>© 2026 AASara | Hope for All Beings | Connecting Jainism Digitally</p>
+  <p>
+    Aasara - Hope for All Beings | Connecting Jainism Digitally
+  </p>
 </footer>
 
 </body>
 </html>
-
